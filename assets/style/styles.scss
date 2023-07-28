@@ -1,0 +1,447 @@
+// IMPORTS
+@import "colors";
+@import "font";
+
+// STYLE universal
+body {
+    max-width: 1770px;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+@mixin blue-button {
+    margin-top: 46px;
+    background-color: $cornflower;
+    color: $white;
+    width: 228px;
+    height: 63px;
+    border: none;
+    @include aleo;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+
+@mixin bg-icon {
+    height: 99px;
+    width: 99px;
+    background: $dune;
+    border-radius: 100%;
+}
+
+@mixin spain-card {
+    width: 543px;
+    height: 374px;
+    background: $dark-jungle;
+    color: $mercury;
+
+    span {
+        @include josefin-reg;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+
+    h3 {
+        margin-top: 23px;
+        @include josefin-reg;
+        color: $white;
+        font-size: 20px;
+    }
+
+    p {
+        margin-top: 13px;
+        @include josefin-reg;
+        color: $mercury;
+        font-size: 16px;
+    }
+}
+
+.btn-blue {
+    @include blue-button;
+}
+
+//STYLE PROPERTIES
+
+.main__landing-page {
+    background-image: url(/assets/img/Landing-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 820px;
+
+    .main__title-one {
+        @include josefin-bold;
+        font-size: 48px;
+        letter-spacing: 4.8px;
+        text-align: center;
+        margin-bottom: 11px;
+        margin-top: 60px
+    }
+
+    .main__title-two {
+        @include josefin-reg;
+        font-size: 22px;
+        letter-spacing: 6.82px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .main__searchbar {
+        width: 650px;
+        height: 63px;
+
+        .main__searchfield {
+            width: 500px;
+            height: 63px;
+            text-align: center;
+            @include josefin-reg;
+            color: #999;
+            font-size: 14px;
+            letter-spacing: 2.8px;
+            border: none;
+            padding-left: 60px;
+        }
+
+        .main__btn {
+            width: 150px;
+            height: 63px;
+            background-color: $cornflower;
+            border: 2px solid $white;
+            color: $white;
+            @include aleo;
+            font-size: 14px;
+            text-align: center;
+            line-height: 26px;
+            letter-spacing: 1.4px;
+            font-style: normal;
+            cursor: pointer;
+
+            .fa-magnifying-glass {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .main__scroll {
+        margin-top: 107px;
+        @include aleo;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2.8px;
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 737px;
+    height: 83px;
+    width: 100%;
+    max-width: 1770px;
+    background-color: $cornflower;
+    
+    .navbar__content {
+        width: 1138px;
+
+        label {
+            @include josefin-bold;
+            font-size: 24px;
+            line-height: 26px;
+            letter-spacing: 2.4px;
+        }
+    }
+
+    .navbar__list {
+        width: 555px;
+        gap: 12px;
+        @include aleo;
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.second__section {
+    .second__why-choose-us {
+        background-image: url(/assets/img/why-choose-us.png);
+        height: 685px;
+        width: 100%;
+
+        .second__group-one {
+
+            .second__title {
+                margin-bottom: 50px;
+                @include aleo;
+                font-size: 36px;
+            }
+    
+            .second__paragraph-one {
+                max-width: 560px;
+                @include josefin-reg;
+                color: $mercury;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 1.6px;
+                margin-bottom: 20px;
+            }
+    
+            .second__paragraph-two {
+                max-width: 560px;
+                @include josefin-reg;
+                color: $mercury;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 1.6px;
+            }
+        }
+
+        .second__group-two {
+            margin-left: 110px;
+            margin-top: 112px;
+            margin-bottom: 123px;
+            gap: 10px;
+
+            .group-two__boathouse {
+                max-width: 350px;
+                max-height: 220px;
+            }
+
+            .group-two__cliff {
+                max-width: 350px;
+                max-height: 220px;
+                margin-left: 85px;
+            }
+        }
+    }
+
+    .second__how-it-works {
+        background-color: $dune;
+        height: 340px;
+        width: 100%;
+
+        span {
+            @include aleo;
+            color: $mercury;
+            font-size: 36px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .arch {
+            position: absolute;
+            width: 100%;
+            height: 99px;
+            margin-bottom: 194px;
+            z-index: 1;
+        }
+
+        .second__icon-container {
+            width: 1000px;
+        }
+
+        .how-it-works__bg-icon {
+            @include bg-icon;
+            margin-bottom: 38px;
+            position: relative;
+            z-index: 2;
+
+            .fa-solid, .fa-regular {
+                font-size: 60px;
+            }
+
+            .fa-magnifying-glass {
+                color: $cornflower;
+            }
+
+            .fa-circle-check {
+                color: $bittersweet;
+            }
+
+            .fa-thumbs-up {
+                color: $azure;
+            }
+        }
+    }
+}
+
+.third__section {
+
+    .spain__card-content {
+        margin: 49px 32px 50px;
+    }
+
+    .group__one {
+        background-image: url(/assets/img/Rectangle41445.png);
+        height: 700px;
+
+        .spain__card-one {
+            @include spain-card;
+            position: absolute;
+            margin-top: 227px;
+            margin-left: 328px;
+        }
+    }
+
+    .group__two {
+        background-image: url(/assets/img/Rectangle41446.png);
+        height: 700px;
+
+        .spain__card-two {
+            @include spain-card;
+            position: absolute;
+            margin-top: 227px;
+            margin-left: 898px;
+        }
+    }
+}
+
+
+.fourth__section {
+    background-image: url(/assets/img/Rectangle41421.png);
+    height: 731px;
+
+    h2 {
+        margin-top: 128px;
+        margin-bottom: 91px;
+        @include aleo;
+        font-size: 36px;
+        line-height: 26px;
+    }
+
+    .container {
+        margin-bottom: 198px;
+
+        .quote {
+            width: 668px;
+            height: 284px;
+            background: $dune;
+            color: $mercury;
+
+            h3 {
+                margin-top: 49px;
+                margin-left: 62px;
+                @include josefin-reg;
+                font-size: 20px;
+            }
+
+            .fa-quote-left {
+                margin-right: 6px;
+            }
+
+            p {
+                margin-top: 8px;
+                margin-left: 62px;
+                margin-right: 25px;
+                @include josefin-reg;
+                color: $mercury;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .fa-quote-left {
+                color: $cornflower;
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 271px;
+    background-color: $dune;
+    color: $white;
+
+    h2 {
+        margin-bottom: 8px;
+        @include josefin-bold;
+        font-size: 24px;
+        letter-spacing: 3.36px;
+    }
+
+    span {
+        margin-bottom: 16px;
+        @include josefin-reg;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+    }
+
+    .footer__socials {
+        margin-bottom: 47px;
+        gap: 25px;
+        font-size: 16px;
+
+        .fa-linkedin-in {
+            color: $cornflower;
+        }
+    }
+}
+
+
+// Helper classes
+
+.list-none {
+    list-style-type: none;
+}
+
+//MARGINS
+
+.mx-12 {
+    margin: 0 12px 0;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+//BORDER
+
+//PADDINGS
+
+
+
+// FLEXBOX
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}

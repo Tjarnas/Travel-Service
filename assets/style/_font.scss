@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(../fonts/JosefinSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(../fonts/JosefinSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url(../fonts/Aleo-Regular.ttf);
+    font-weight: 400;
+}
+
+// VARIABLES
+
+@mixin josefin-reg {
+    font-family: 'Josefin Sans';
+    color: $white;
+    font-weight: 400;
+}
+
+@mixin josefin-bold {
+    font-family: 'Josefin Sans';
+    color: $white;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+@mixin aleo {
+    font-family: 'Aleo';
+    font-weight: 400;
+    color: $white;
+}
