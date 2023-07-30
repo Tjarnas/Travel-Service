@@ -76,8 +76,9 @@ a {
   }
   @keyframes fade-in-down {
     0% {
+      font-size: 200px;
       opacity: 0;
-      transform: translateY(-20px);
+      transform: translateY(-150px);
     }
     100% {
       opacity: 1;
@@ -596,6 +597,13 @@ footer {
     list-style-type: none;
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+    top: -737px;
+    z-index: 3;
+}
+
 //MARGINS
 
 .mx-12 {
@@ -609,8 +617,6 @@ footer {
 //BORDER
 
 //PADDINGS
-
-
 
 // FLEXBOX
 
