@@ -63,6 +63,41 @@ a {
     @include blue-button;
 }
 
+.btn-blue:hover {
+    background-color: $azure;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+// ANIMATION
+
+.fade-in-down {
+    animation: fade-in-down 4s ease;
+  }
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .bounce:hover {
+    animation: bounce 1s ease infinite;
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-15%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      97% { transform:translateY(0%); }
+      99% { transform:translateY(-3%); }
+      100% { transform:translateY(0); }
+  }
+
 //STYLE PROPERTIES
 
 @media (max-width: 1200px) {
@@ -113,6 +148,11 @@ a {
             letter-spacing: 2.8px;
             border: none;
         }
+        .main__searchfield:focus {
+            border: 1px solid $cornflower;
+            border-radius: 5px;
+            color: $cornflower;
+        }
 
         .main__btn {
             width: 150px;
@@ -131,6 +171,11 @@ a {
             .fa-magnifying-glass {
                 font-size: 18px;
             }
+        }
+
+        .main__btn:hover {
+            background-color: $azure;
+            border: 2px solid white;
         }
     }
 
@@ -165,6 +210,10 @@ a {
             line-height: 26px;
             letter-spacing: 2.4px;
         }
+
+        label a:hover {
+            border-bottom: 2px solid $white;
+        }
     }
 
     .navbar__list {
@@ -172,6 +221,11 @@ a {
         gap: 12px;
         @include aleo;
         font-size: 14px;
+    }
+
+    .navbar__list li a:hover {
+        border-bottom: 2px solid lightgray;
+        color: lightgray;
     }
 
     .check-toggle {
@@ -265,10 +319,22 @@ a {
                 max-height: 220px;
             }
 
+            .group-two__boathouse:hover {
+                scale: 1.2;
+                transition: 2s;
+                rotate: 10deg;
+            }
+
             .group-two__cliff {
                 max-width: 350px;
                 max-height: 220px;
                 margin-left: 85px;
+            }
+
+            .group-two__cliff:hover {
+                scale: 1.2;
+                transition: 2s;
+                rotate: -10deg;
             }
         }
     }
@@ -463,6 +529,10 @@ a {
                 color: $cornflower;
                 font-size: 36px;
             }
+        }
+
+        img:hover {
+            scale: 1.2;
         }
     }
 }

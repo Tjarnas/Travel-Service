@@ -33,6 +33,41 @@ a {
   font-size: 16px;
   letter-spacing: 1.2px; }
 
+.btn-blue:hover {
+  background-color: #00A2FF;
+  border: 2px solid white;
+  border-radius: 5px; }
+
+.fade-in-down {
+  animation: fade-in-down 4s ease; }
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.bounce:hover {
+  animation: bounce 1s ease infinite; }
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%); }
+  80% {
+    transform: translateY(-15%); }
+  90% {
+    transform: translateY(0%); }
+  95% {
+    transform: translateY(-7%); }
+  97% {
+    transform: translateY(0%); }
+  99% {
+    transform: translateY(-3%); }
+  100% {
+    transform: translateY(0); } }
+
 @media (max-width: 1200px) {
   .main__searchfield {
     margin-left: 30px;
@@ -77,6 +112,10 @@ a {
       font-size: 14px;
       letter-spacing: 2.8px;
       border: none; }
+    .main__landing-page .main__searchbar .main__searchfield:focus {
+      border: 1px solid #5474FD;
+      border-radius: 5px;
+      color: #5474FD; }
     .main__landing-page .main__searchbar .main__btn {
       width: 150px;
       height: 63px;
@@ -94,6 +133,9 @@ a {
       cursor: pointer; }
       .main__landing-page .main__searchbar .main__btn .fa-magnifying-glass {
         font-size: 18px; }
+    .main__landing-page .main__searchbar .main__btn:hover {
+      background-color: #00A2FF;
+      border: 2px solid white; }
   .main__landing-page .main__scroll {
     margin-top: 107px;
     font-family: 'Aleo';
@@ -125,6 +167,8 @@ a {
       font-size: 24px;
       line-height: 26px;
       letter-spacing: 2.4px; }
+    .navbar .navbar__content label a:hover {
+      border-bottom: 2px solid #FFFFFF; }
   .navbar .navbar__list {
     width: 555px;
     gap: 12px;
@@ -132,6 +176,9 @@ a {
     font-weight: 400;
     color: #FFFFFF;
     font-size: 14px; }
+  .navbar .navbar__list li a:hover {
+    border-bottom: 2px solid lightgray;
+    color: lightgray; }
   .navbar .check-toggle {
     font-size: 24px;
     cursor: pointer;
@@ -197,10 +244,18 @@ a {
     .second__section .second__why-choose-us .second__group-two .group-two__boathouse {
       max-width: 350px;
       max-height: 220px; }
+    .second__section .second__why-choose-us .second__group-two .group-two__boathouse:hover {
+      scale: 1.2;
+      transition: 2s;
+      rotate: 10deg; }
     .second__section .second__why-choose-us .second__group-two .group-two__cliff {
       max-width: 350px;
       max-height: 220px;
       margin-left: 85px; }
+    .second__section .second__why-choose-us .second__group-two .group-two__cliff:hover {
+      scale: 1.2;
+      transition: 2s;
+      rotate: -10deg; }
 
 .second__section .second__how-it-works {
   background-color: #333333;
@@ -384,6 +439,8 @@ a {
       .fourth__section .container .quote .fa-quote-left {
         color: #5474FD;
         font-size: 36px; }
+    .fourth__section .container img:hover {
+      scale: 1.2; }
 
 @media (max-width: 1200px) {
   .fourth__section {
