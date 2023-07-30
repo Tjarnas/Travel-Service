@@ -140,6 +140,11 @@ a {
     width: 100%;
     max-width: 1770px;
     background-color: $cornflower;
+    @media (max-width: 1200px) {
+        top: 0;
+        position: fixed;
+        z-index: 3;
+    }
     
     .navbar__content {
         width: 1138px;
@@ -159,10 +164,49 @@ a {
         font-size: 14px;
     }
 
-    .menu-toggle {
+    .check-toggle {
         font-size: 24px;
         cursor: pointer;
         display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media (max-width: 1200px) {
+
+        .check-toggle {
+            display: block;
+            margin-right: 50px;
+        }
+
+        .navbar__title {
+            margin-left: 25px;
+        }
+
+        .navbar__list {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 83px;
+            left: -100%;
+            background: $dune;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all 0.4s;
+
+            li {
+                margin-top: 30px;
+            }
+        }
+
+        .navbar__content {
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
     }
 }
 
@@ -279,11 +323,13 @@ a {
         background-image: url(/assets/img/Rectangle41445.png);
         height: 700px;
 
+        .group__one-scalable {
+            width: 871px;
+            height: 374px;
+            margin-bottom: 99px;
+        }
         .spain__card-one {
             @include spain-card;
-            position: absolute;
-            margin-top: 227px;
-            margin-left: 328px;
         }
     }
 
@@ -291,11 +337,13 @@ a {
         background-image: url(/assets/img/Rectangle41446.png);
         height: 700px;
 
+        .group__two-scalable {
+            width: 1441px;
+            height: 374px;
+            margin-bottom: 99px;
+        }
         .spain__card-two {
             @include spain-card;
-            position: absolute;
-            margin-top: 227px;
-            margin-left: 898px;
         }
     }
 }
@@ -380,7 +428,6 @@ footer {
         }
     }
 }
-
 
 // Helper classes
 
