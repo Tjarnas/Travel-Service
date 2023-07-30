@@ -330,6 +330,20 @@ a {
       color: #E8E8E8;
       font-size: 16px; }
 
+@media (max-width: 1200px) {
+  .third__section .group__one {
+    align-items: center; }
+    .third__section .group__one .group__one-scalable {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 0; }
+  .third__section .group__two {
+    align-items: center; }
+    .third__section .group__two .group__two-scalable {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 0; } }
+
 .fourth__section {
   background-image: url(/assets/img/Rectangle41421.png);
   height: 731px; }
@@ -370,6 +384,22 @@ a {
       .fourth__section .container .quote .fa-quote-left {
         color: #5474FD;
         font-size: 36px; }
+
+@media (max-width: 1200px) {
+  .fourth__section {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .fourth__section .container {
+      flex-direction: column;
+      align-items: center; }
+      .fourth__section .container img {
+        width: 300px;
+        height: 50%; }
+      .fourth__section .container .quote {
+        width: 300px;
+        height: auto;
+        padding-bottom: 30px; } }
 
 footer {
   height: 271px;
