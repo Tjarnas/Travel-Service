@@ -43,8 +43,9 @@ a {
 
 @keyframes fade-in-down {
   0% {
+    font-size: 200px;
     opacity: 0;
-    transform: translateY(-20px); }
+    transform: translateY(-150px); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -486,6 +487,12 @@ footer {
 
 .list-none {
   list-style-type: none; }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -737px;
+  z-index: 3; }
 
 .mx-12 {
   margin: 0 12px 0; }
