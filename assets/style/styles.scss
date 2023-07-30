@@ -391,6 +391,31 @@ a {
     }
 }
 
+@media (max-width: 1200px) {
+    .third__section {
+
+        .group__one {
+            align-items: center;
+
+            .group__one-scalable {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 0;
+            }
+        }
+
+        .group__two {
+            align-items: center;
+
+            .group__two-scalable {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 
 .fourth__section {
     background-image: url(/assets/img/Rectangle41421.png);
@@ -437,6 +462,29 @@ a {
             .fa-quote-left {
                 color: $cornflower;
                 font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .fourth__section {
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 300px;
+                height: 50%;
+            }
+
+            .quote {
+                width: 300px;
+                height: auto;
+                padding-bottom: 30px;
             }
         }
     }
