@@ -239,6 +239,26 @@ a {
     .second__section .second__how-it-works .how-it-works__bg-icon .fa-thumbs-up {
       color: #00A2FF; }
 
+@media (max-width: 1200px) {
+  .second__section .second__group-one {
+    margin-left: 30px;
+    max-width: 300px; } }
+
+@media (max-width: 1200px) and (max-width: 875px) {
+  .second__section .second__group-two {
+    display: none; } }
+
+@media (max-width: 1200px) {
+  .second__section .arch {
+    display: none; } }
+
+@media (max-width: 1200px) and (max-width: 875px) {
+  .second__section .second__how-it-works {
+    height: 800px; }
+  .second__section .second__icon-container {
+    flex-direction: column;
+    gap: 80px; } }
+
 .third__section .spain__card-content {
   margin: 49px 32px 50px; }
 
